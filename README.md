@@ -1,5 +1,8 @@
 # Keyword Mapper for BrightonSEO
 
+![enter image description here](https://github.com/CharlyWargnier/KeywordMapperForBrightonSEO/blob/main/logo.png?raw=true)
+
+
 You can try the app here:
 https://share.streamlit.io/charlywargnier/keywordmapperforbrightonseo/main/app.py
 
