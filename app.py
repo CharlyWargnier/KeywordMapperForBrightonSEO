@@ -39,18 +39,6 @@ with c30:
 
     c10 = st.beta_container()
 
-with c11.beta_expander("ℹ️ -  About the crawl format", expanded=False):
-
-    st.write(
-        """
-
--   Add text
-        
-        """
-    )
-
-    c11.write("")
-
 ########################
 
 st.markdown("## **②  Paste keywords/internal search terms ✨**")
