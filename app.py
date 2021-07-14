@@ -55,7 +55,7 @@ linesList = list(filter(None, linesList))  # Remove empty
 
 if len(linesList) > MAX_LINES:
     st.warning(
-        f"⚠️ Only the 200 first keywords will be reviewed. Increased allowance  is coming - Stay tuned! 😊)"
+        f"⚠️ Only the first 200 keywords will be reviewed. Increased allowance  is coming - Stay tuned! 😊)"
     )
     linesList = linesList[:MAX_LINES]
 
