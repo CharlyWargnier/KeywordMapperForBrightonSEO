@@ -8,8 +8,7 @@ import csv
 # import matplotlib as plt
 
 st.set_page_config(
-    page_title="Keyword Mapper for BrightonSEO", page_icon="✨", layout="wide"
-)
+    page_title="Keyword Mapper for BrightonSEO", page_icon="✨")
 
 c30, c31, c32 = st.columns(3)
 
