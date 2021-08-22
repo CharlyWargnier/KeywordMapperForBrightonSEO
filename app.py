@@ -11,7 +11,7 @@ st.set_page_config(
     page_title="Keyword Mapper for BrightonSEO", page_icon="✨", layout="wide"
 )
 
-c30, c31, c32 = st.beta_columns(3)
+c30, c31, c32 = st.columns(3)
 
 with c30:
     st.image("logo.png", width=500)
@@ -31,13 +31,13 @@ st.write("")
 
 st.markdown("## **① Upload crawl 🐸**")
 
-c11 = st.beta_container()
+c11 = st.container()
 
-c29, c30, c31 = st.beta_columns([1, 6, 1])
+c29, c30, c31 = st.columns([1, 6, 1])
 
 with c30:
 
-    c10 = st.beta_container()
+    c10 = st.container()
 
 ########################
 
@@ -61,22 +61,22 @@ if len(linesList) > MAX_LINES:
 
 ########################
 
-c = st.beta_container()
-c30 = st.beta_container()
-c29, c30, c31 = st.beta_columns(3)
+c = st.container()
+c30 = st.container()
+c29, c30, c31 = st.columns(3)
 
 with c29:
     start_execution = st.button(" Run model! ✨ ")
-    c50 = st.beta_container()
+    c50 = st.container()
 
-c29, c30, c31 = st.beta_columns([1, 6, 1])
+c29, c30, c31 = st.columns([1, 6, 1])
 
 with c30:
 
     uploaded_file = c10.file_uploader("", key="1")
 
     if uploaded_file is not None:
-        file_container = c10.beta_expander("Check your uploaded CSV")
+        file_container = c10.expander("Check your uploaded CSV")
         GSCDf = pd.read_csv(uploaded_file)
         uploaded_file.seek(0)
         file_container.write(GSCDf)
@@ -141,18 +141,18 @@ else:
 
     FuzzStyled = FuzzStyled.format(format_dictionary)
 
-    c2 = st.beta_container()
-    c29, c30, c31 = st.beta_columns([1, 6, 1])
+    c2 = st.container()
+    c29, c30, c31 = st.columns([1, 6, 1])
 
     with c30:
-        c = st.beta_container()
+        c = st.container()
         st.table(FuzzStyled)
 
     csv = Polyfuzz.to_csv(index=False)
     b64 = base64.b64encode(csv.encode()).decode()
 
     c2.markdown("## **③ Check mapping 📌**")
-    with c2.beta_expander("ℹ️ - Tips for better mapping", expanded=False):
+    with c2.expander("ℹ️ - Tips for better mapping", expanded=False):
 
         st.write(
             """   
