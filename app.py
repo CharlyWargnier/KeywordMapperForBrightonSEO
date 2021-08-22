@@ -45,7 +45,7 @@ st.markdown("## **②  Paste keywords/internal search terms ✨**")
 
 linesDeduped2 = []
 MAX_LINES = 200
-text = st.text_area("One keyword per line (200 max)", height=200, key="1")
+text = st.text_area("One keyword per line (200 max)", height=200, key="2")
 lines = text.split("\n")  # A list of lines
 linesList = []
 for x in lines:
