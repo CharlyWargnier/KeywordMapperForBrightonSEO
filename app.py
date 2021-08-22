@@ -45,7 +45,7 @@ st.markdown("## **②  Paste keywords/internal search terms ✨**")
 
 linesDeduped2 = []
 MAX_LINES = 200
-text = st.text_area("One keyword per line (200 max)", height=200, key=1)
+text = st.text_area("One keyword per line (200 max)", height=200, key="1")
 lines = text.split("\n")  # A list of lines
 linesList = []
 for x in lines:
@@ -73,7 +73,7 @@ c29, c30, c31 = st.beta_columns([1, 6, 1])
 
 with c30:
 
-    uploaded_file = c10.file_uploader("", key=1)
+    uploaded_file = c10.file_uploader("", key="1")
 
     if uploaded_file is not None:
         file_container = c10.beta_expander("Check your uploaded CSV")
